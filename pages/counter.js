@@ -23,12 +23,7 @@ export default function Counter () {
                            <h1> Counter App </h1>
                            <p className="mb-3"> {tambah} </p>
                 <div>
-                        <Button
-                        variant='primary'
-                        onClick={() => {
-                            setTambah(tambah + 1)
-                        }}
-                        > + </Button>
+                      
                         {"    "}
                         <Button
                         variant='warning'
@@ -36,6 +31,13 @@ export default function Counter () {
                             setTambah(tambah - 1)
                         }}                  
                         > - </Button>
+                         {"    "}
+                          <Button
+                        variant='danger'
+                        onClick={() => {
+                            setTambah(tambah + 1)
+                        }}
+                        > + </Button>
                 </div>
                
 
